@@ -2937,11 +2937,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ygmr4\\Desktop\\EasyCashIdentityProject\\EasyCashIdentityProject.EntityLayer\\EasyCashIdentityProject.EntityLayer.csproj",
+      "projectUniqueName": "C:\\Users\\ygmr4\\Desktop\\Projects\\EasyCashIdentityProject\\EasyCashIdentityProject.EntityLayer\\EasyCashIdentityProject.EntityLayer.csproj",
       "projectName": "EasyCashIdentityProject.EntityLayer",
-      "projectPath": "C:\\Users\\ygmr4\\Desktop\\EasyCashIdentityProject\\EasyCashIdentityProject.EntityLayer\\EasyCashIdentityProject.EntityLayer.csproj",
+      "projectPath": "C:\\Users\\ygmr4\\Desktop\\Projects\\EasyCashIdentityProject\\EasyCashIdentityProject.EntityLayer\\EasyCashIdentityProject.EntityLayer.csproj",
       "packagesPath": "C:\\Users\\ygmr4\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ygmr4\\Desktop\\EasyCashIdentityProject\\EasyCashIdentityProject.EntityLayer\\obj\\",
+      "outputPath": "C:\\Users\\ygmr4\\Desktop\\Projects\\EasyCashIdentityProject\\EasyCashIdentityProject.EntityLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ygmr4\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3AmyqEYCLxYiE3SER3H/nJrlAs5Yq9BEnQ47qfV36dH2zzVnPZ8L4VjBU9B42AxbN7bjjcRrvEkzIQIPLFD0Cw==",
+  "dgSpecHash": "l129JqhSC9u7dxB4vvUbmjn1TLX9cR7J5NuOsrU0EKxNhb9lDTKu32Yzk+42xgWiqQ55AwLX6JCn1/9BKnBCyA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ygmr4\\Desktop\\EasyCashIdentityProject\\EasyCashIdentityProject.DtoLayer\\EasyCashIdentityProject.DtoLayer.csproj",
+  "projectFilePath": "C:\\Users\\ygmr4\\Desktop\\Projects\\EasyCashIdentityProject\\EasyCashIdentityProject.DtoLayer\\EasyCashIdentityProject.DtoLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ygmr4\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

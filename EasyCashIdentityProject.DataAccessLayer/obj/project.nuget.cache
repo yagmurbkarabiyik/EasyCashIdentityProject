@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hXlVdW8U1OzXPwhrT3XjTS26SEO+PpZ/XziwovtwuExUoCW7qbQBlOgD/Z5r//ATtNxoAwiygj1mYpzznobCVA==",
+  "dgSpecHash": "bSun6nT6z26CIFRfTt3fN0/76hjDT23Y/TCb2DhhOPBX/48xd3HABv73QhBRPjc986OAeegSYrRfkiTo+SvfYA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ygmr4\\Desktop\\EasyCashIdentityProject\\EasyCashIdentityProject.DataAccessLayer\\EasyCashIdentityProject.DataAccessLayer.csproj",
+  "projectFilePath": "C:\\Users\\ygmr4\\Desktop\\Projects\\EasyCashIdentityProject\\EasyCashIdentityProject.DataAccessLayer\\EasyCashIdentityProject.DataAccessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ygmr4\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
