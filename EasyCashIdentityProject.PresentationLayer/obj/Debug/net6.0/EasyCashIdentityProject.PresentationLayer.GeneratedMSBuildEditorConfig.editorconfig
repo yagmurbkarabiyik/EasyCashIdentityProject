@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\ygmr4\Desktop\Projects\EasyCashIdentityProject\EasyCashIdentityProject.PresentationLayer
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/ygmr4/Desktop/Projects/EasyCashIdentityProject/EasyCashIdentityProject.PresentationLayer/Views/ConfirmMails/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZmlybU1haWxzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ygmr4/Desktop/Projects/EasyCashIdentityProject/EasyCashIdentityProject.PresentationLayer/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
