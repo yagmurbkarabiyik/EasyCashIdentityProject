@@ -1,0 +1,72 @@
+﻿@model AppUserEditDto
+@{
+
+}
+<div class="container-fluid form-group">
+    <form asp-controller="MyProfile" asp-action="UpdateProfile" method="post">
+        <input type="hidden" asp-for="Id" />
+
+        <div class="row mb-3">
+            <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Profile Image</label>
+            <div class="col-md-8 col-lg-9">
+                <img src="~/NiceAdmin/assets/img/profile-img.jpg" alt="Profile">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="name" class="col-md-4 col-lg-3 col-form-label">Name</label>
+            <div class="col-md-8 col-lg-9">
+                <input asp-for = "Name" type="text" class="form-control" id="name">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label  class="col-md-4 col-lg-3 col-form-label">Surname</label>
+            <div class="col-md-8 col-lg-9">
+                <input asp-for="Surname"  class="form-control" id="surname"></input>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label  class="col-md-4 col-lg-3 col-form-label">District</label>
+            <div class="col-md-8 col-lg-9">
+                <input asp-for="District" class="form-control" id="district"></input>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label  class="col-md-4 col-lg-3 col-form-label">City</label>
+            <div class="col-md-8 col-lg-9">
+                <input asp-for="City" class="form-control" id="district"></input>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-md-4 col-lg-3 col-form-label">Phone Number</label>
+            <div class="col-md-8 col-lg-9">
+                <input asp-for="PhoneNumber" class="form-control" id="district"></input>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label  class="col-md-4 col-lg-3 col-form-label">Email</label>
+            <div class="col-md-8 col-lg-9">
+                <input asp-for="Email" type="email" class="form-control" id="email"></input>
+            </div>
+        </div>
+        @*<div class="row mb-3">
+            <label  class="col-md-4 col-lg-3 col-form-label">Password</label>
+            <div class="col-md-8 col-lg-9">
+                <input asp-for="Password" class="form-control" id="password"></input>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label  class="col-md-4 col-lg-3 col-form-label">Confirm Password</label>
+            <div class="col-md-8 col-lg-9">
+                <input asp-for="ConfirmPasword" class="form-control" id="confirmPassword"></input>
+            </div>
+        </div>*@
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+        </div>
+    </form>
+</div>

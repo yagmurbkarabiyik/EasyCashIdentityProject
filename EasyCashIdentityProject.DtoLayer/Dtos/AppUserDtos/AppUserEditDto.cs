@@ -8,6 +8,7 @@ namespace EasyCashIdentityProject.DtoLayer.Dtos.AppUserDtos
 {
     public class AppUserEditDto
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string District { get; set; }
