@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+@await Component.InvokeAsync("_CustomerLayoutHeaderPartial");
+
+<body>
+
+    @await Component.InvokeAsync("_CustomerLayoutNavbarPartial");
+    @await Component.InvokeAsync("_CustomerLayoutSidebarPartial");
+
+
+    @await Component.InvokeAsync("_CustomerLayoutSectionProfilePartial");
+    
+
+    @await Component.InvokeAsync("_CustomerLayoutFooterPartial");
+
+    @await Component.InvokeAsync("_CustomerLayoutScriptsPartial");
+
+</body>
+
+
+    

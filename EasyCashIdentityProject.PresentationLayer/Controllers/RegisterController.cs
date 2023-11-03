@@ -67,7 +67,7 @@ namespace EasyCashIdentityProject.PresentationLayer.Controllers
 
                     //tempData veri taşımayı sağlar 
                     TempData["Mail"] = appUserRegisterDto.Email;
-                    return RedirectToAction("Index", "ConfirmMail");
+                    return RedirectToAction("Index", "ConfirmMails");
                 }
                 else
                 {
