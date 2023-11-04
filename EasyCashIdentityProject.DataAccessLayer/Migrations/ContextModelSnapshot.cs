@@ -39,7 +39,17 @@ namespace EasyCashIdentityProject.DataAccessLayer.Migrations
                     b.Property<int>("ProcessType")
                         .HasColumnType("int");
 
+                    b.Property<int?>("ReceiverId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("SenderId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("ReceiverId");
+
+                    b.HasIndex("SenderId");
 
                     b.ToTable("AccountProcesses");
                 });
@@ -301,6 +311,22 @@ namespace EasyCashIdentityProject.DataAccessLayer.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("EasyCashIdentityProject.EntityLayer.Concrete.AccountProcess", b =>
+                {
+                    b.HasOne("EasyCashIdentityProject.EntityLayer.Concrete.CustomerAccount", "ReceiverCustomer")
+                        .WithMany("CustomerReceiver")
+                        .HasForeignKey("ReceiverId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.HasOne("EasyCashIdentityProject.EntityLayer.Concrete.CustomerAccount", "SenderCustomer")
+                        .WithMany("CustomerSender")
+                        .HasForeignKey("SenderId");
+
+                    b.Navigation("ReceiverCustomer");
+
+                    b.Navigation("SenderCustomer");
+                });
+
             modelBuilder.Entity("EasyCashIdentityProject.EntityLayer.Concrete.CustomerAccount", b =>
                 {
                     b.HasOne("EasyCashIdentityProject.EntityLayer.Concrete.AppUser", "AppUser")
@@ -366,6 +392,13 @@ namespace EasyCashIdentityProject.DataAccessLayer.Migrations
             modelBuilder.Entity("EasyCashIdentityProject.EntityLayer.Concrete.AppUser", b =>
                 {
                     b.Navigation("CustomerAccounts");
+                });
+
+            modelBuilder.Entity("EasyCashIdentityProject.EntityLayer.Concrete.CustomerAccount", b =>
+                {
+                    b.Navigation("CustomerReceiver");
+
+                    b.Navigation("CustomerSender");
                 });
 #pragma warning restore 612, 618
         }
