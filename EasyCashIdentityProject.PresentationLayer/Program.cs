@@ -1,4 +1,8 @@
+using EasyCashIdentityProject.BusinessLayer.Abstract;
+using EasyCashIdentityProject.BusinessLayer.Concrete;
+using EasyCashIdentityProject.DataAccessLayer.Abstract;
 using EasyCashIdentityProject.DataAccessLayer.Concrete;
+using EasyCashIdentityProject.DataAccessLayer.EntityFramework;
 using EasyCashIdentityProject.EntityLayer.Concrete;
 using EasyCashIdentityProject.PresentationLayer.Models;
 
@@ -13,6 +17,10 @@ builder.Services.AddDbContext<Context>();
 builder.Services.AddIdentity<AppUser, AppRole>()
                  .AddEntityFrameworkStores<Context>()
                  .AddErrorDescriber<CustomIdentityValidator>();
+
+
+builder.Services.AddScoped<ICustomerAccountDal, EfCustomerAccountProcessDal>();
+builder.Services.AddScoped<IAccountProcessService, AccountProcessManager>();  
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
