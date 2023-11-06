@@ -16,12 +16,13 @@ builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.AddDbContext<Context>();
 builder.Services.AddIdentity<AppUser, AppRole>()
                  .AddEntityFrameworkStores<Context>()
-                 .AddErrorDescriber<CustomIdentityValidator>();
+.AddErrorDescriber<CustomIdentityValidator>();
 
+//builder.Services.AddScoped<IAccountProcessDal, EfCustomerAccountProcessDal>();
+//builder.Services.AddScoped<ICustomerAccountService, CustomerAccountManager>();
 
-builder.Services.AddScoped<ICustomerAccountDal, EfCustomerAccountProcessDal>();
-builder.Services.AddScoped<IAccountProcessService, AccountProcessManager>();  
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

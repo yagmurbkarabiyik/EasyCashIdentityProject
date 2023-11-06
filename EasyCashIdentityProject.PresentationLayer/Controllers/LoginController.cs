@@ -25,7 +25,7 @@ namespace EasyCashIdentityProject.PresentationLayer.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(LoginViewModel loginViewModel)
         {
-            var result = await _signInMagager.PasswordSignInAsync(loginViewModel.UserName, loginViewModel.Password, false, true);
+            var result = await _signInMagager.PasswordSignInAsync(loginViewModel.UserName, loginViewModel.Password, true, true);
             if (result.Succeeded)
             {
                 var user = await _userManager.FindByNameAsync(loginViewModel.UserName);
